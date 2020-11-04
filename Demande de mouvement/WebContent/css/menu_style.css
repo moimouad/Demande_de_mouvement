@@ -1,0 +1,65 @@
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:10;
+}
+
+li.menu {
+  float: left;
+}
+
+li a.menu {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.m {
+  display: none ;
+}
+
+.btn:hover + .m{display: block;}
+
+li p.menu {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a.menu:hover {
+  background-color: #111;
+}
+
+.active.menu {
+  background-color: #827ffe;
+  color: white;
+}
+
+.btn:hover ul {display: block;}
+
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  z-index:100;
+  
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  z-index:100;
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
